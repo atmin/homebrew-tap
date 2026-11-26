@@ -1,30 +1,30 @@
 class Memcore < Formula
   desc "Long-term memory for coding agents"
   homepage "https://memco.re"
-  version "0.12.0"
+  version "0.13.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/atmin/memcore/releases/download/v0.12.0/memcore-darwin-arm64", using: :nounzip
-      sha256 "4e513a71addf7921768264983b1a6682703df54831d9cdd7110a4d685e8f181b"
+      url "https://github.com/atmin/memcore/releases/download/v0.13.0/memcore-darwin-arm64", using: :nounzip
+      sha256 "4dbbda5145f65620ca4821c9aadb2a2860790ad295c6e824a4f32bc956a54efa"
       depends_on arch: :arm64
     end
     on_intel do
-      url "https://github.com/atmin/memcore/releases/download/v0.12.0/memcore-darwin-amd64", using: :nounzip
-      sha256 "56257f7690ac5f536eb32ba95e23fbdea6d11b938dac9b849a2acbd9724e19f2"
+      url "https://github.com/atmin/memcore/releases/download/v0.13.0/memcore-darwin-amd64", using: :nounzip
+      sha256 "cf5707c9cd5bb735c584713bdc7f66700dd3ca4a09ca8c0822377dfc0c4ea46b"
       depends_on arch: :x86_64
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/atmin/memcore/releases/download/v0.12.0/memcore-linux-arm64-glibc", using: :nounzip
-      sha256 "05f0babae2ac785a5fcfb3dc90b3839996f1a5227eada3631bb878c7732ee40b"
+      url "https://github.com/atmin/memcore/releases/download/v0.13.0/memcore-linux-arm64-glibc", using: :nounzip
+      sha256 "eaca61799def44c6ece7a71549eabfe1d6b1a1d1bf71eef0c12e455a2fb198fc"
       depends_on arch: :arm64
     end
     on_intel do
-      url "https://github.com/atmin/memcore/releases/download/v0.12.0/memcore-linux-amd64-glibc", using: :nounzip
-      sha256 "8c98e25c3a2e2bc27aece40ae5919f0d51e3d00c3908bac4a8aad3f53b66ae2c"
+      url "https://github.com/atmin/memcore/releases/download/v0.13.0/memcore-linux-amd64-glibc", using: :nounzip
+      sha256 "d5d5b5199a39afbd7f68ce15a03ed4d9c9a5b29d681e132acc322ee3b3a197de"
       depends_on arch: :x86_64
     end
   end
